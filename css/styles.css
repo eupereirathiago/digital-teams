@@ -15,6 +15,7 @@
 
 :root{
     --dark-gray: #242424;
+    --black-90: #00000090;
     --medium-gray: #333333;
     --ligth-gray: #464646;
     --pink: #C61067;
@@ -119,6 +120,16 @@ fill: var(--pink);
     align-items: center;
     fill: #fff;
 }
+#teams ul li h4 box-icon{
+    width: 40px;
+    padding: 0 8px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+#teams ul li h4 box-icon:hover{
+    fill: var(--pink);
+}
+
 
 #teams ul li h1{
     width: 100px;
@@ -140,4 +151,131 @@ fill: var(--pink);
     display:block;
     font-size: 16px;
     font-weight: bold;
+}
+#teams ul li .actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+#teams ul li .actions button{
+    background-color: transparent;
+    height: 40px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+#teams ul li .actions button:hover{
+    background-color: var(--pink);
+}
+
+#teams ul li .actions button:first-of-type{
+    flex: 1;
+    
+}
+
+#teams ul li .actions button:last-of-type{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#teams ul li .actions button:last-of-type box-icon{
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+    fill: #fff;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: var(--black-90);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+form{
+    width: 500px;
+    background-color: var(--dark-gray);
+    padding: 26px;
+    border-radius: 10px;
+    position: fixed;
+
+    z-index: 2;
+    top: 50%;
+    left: calc(50% - 250px);
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+form.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+form h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form h3 box-icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    fill: #fff;
+    transition-duration: 200ms;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+form h3 box-icon:hover{
+    background-color: var(--pink);
+}
+
+form label{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--medium-gray);
+    border: 2px solid var(--ligth-gray);
+    margin-bottom: 16px;
+    padding-left: 10px;
+}
+form input:focus{
+    border-color: var(--pink);
+}
+
+form button{
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--pink);
 }
