@@ -199,6 +199,13 @@ fill: var(--pink);
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#overlay .show{
+    opacity: 1;
+    visibility: visible;
 }
 
 form{

@@ -20,7 +20,7 @@
     </header>
     <main>
         <section id="teams" class="container">
-            <h2>Teams <button><box-icon name='plus'></box-icon>Novo Team</button></h2>
+            <h2>Teams <button id="criarbtn"><box-icon name='plus'></box-icon>Novo Team</button></h2>
             <ul>
                 <li>
                     <h4>Nome do Team <box-icon name='show'></box-icon></box-icon></h4>
@@ -110,7 +110,7 @@
 
      <div id="overlay"></div>
 
-     <form class="show">
+     <form id="formcriar">
         <h3>Criar <box-icon name="x"></box-icon></h3>
         <label for="nome">Nome do Time</label>
         <input type="text" id="name" required>
@@ -125,5 +125,6 @@
 
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
