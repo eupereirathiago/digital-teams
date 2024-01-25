@@ -203,7 +203,7 @@ fill: var(--pink);
     visibility: hidden;
 }
 
-#overlay .show{
+#overlay.show{
     opacity: 1;
     visibility: visible;
 }
